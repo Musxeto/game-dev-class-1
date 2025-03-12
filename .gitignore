@@ -1,0 +1,55 @@
+# Ignore the main Unity-generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Ignore the Auto-generated VS/JetBrains Rider files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Ignore cache and local settings
+*.bak
+*.ilk
+*.ncb
+*.pdb
+*.idb
+*.sdf
+*.DS_Store
+*.swp
+*.lock
+*.log
+*.sqlite
+*.db
+*.mdb
+
+# Ignore the Unity-generated metadata
+/[Aa]ssets/ [Ss]treaming[Aa]ssets/
+# Ignore Unity Collaborate temporary files
+/[Uu]nity[Cc]ollab[Mm]etadata/
+
+# Ignore Play mode and Editor cache
+/[Mm]emoryCaptures/
+*[Dd]ebug*[Ll]og
+
+# Ignore Build folders
+/[Bb]uilds/
+# Ignore the Asset Store downloaded packages
+/[Aa]ssets/[Aa]sset[Ss]tore[Tt]ools/
+
+# Ignore crash reports and analytics
+/[Cc]rash[Rr]eports/
