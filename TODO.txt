@@ -1,0 +1,10 @@
+-> LEARN ABOUT DRAG AND AUNGULAR DRAG AND THEIR DIFFERENCE
+
+-> more obstacles and  - game over 
+
+-> jump over 
+
+-> ADD COINS + sound + animation
+
+-> SPARKLES SHOULD LOOK GOOD WHEN THE PLAYER DROPS
+
