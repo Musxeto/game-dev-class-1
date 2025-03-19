@@ -9,12 +9,15 @@ public class CoinManager : MonoBehaviour
     public float groundWidth = 10f; // Adjust based on ground size
     public float groundLength = 50f; // Adjust based on ground size
     public Text coinText;           // UI Text to show coins collected
-    private int coinCount = 0;       // Player's coin count
+    private int coinCount = 0;   
+    public Transform Spawnpoint;    // Player's coin count
 
     void Start()
     {
         SpawnCoins();  
         UpdateCoinUI();
+
+        
     }
 
     void SpawnCoins()
@@ -24,25 +27,28 @@ public class CoinManager : MonoBehaviour
             Vector3 randomPosition = new Vector3(
                 Random.Range(ground.position.x - groundWidth / 2, ground.position.x + groundWidth / 2),
                 1f, // Height to ensure visibility
-                Random.Range(ground.position.z, ground.position.z + groundLength / 2) // Avoid extreme Z values
+                Random.Range(-ground.position.z, ground.position.z + groundLength ) // Avoid extreme Z values
             );
 
-            Instantiate(coinPrefab, randomPosition, Quaternion.identity, ground); // Parent it to ground
+    
+
+
+            Instantiate(coinPrefab, randomPosition , Quaternion.identity,Spawnpoint); // Parent it to ground
         }
     }
 
     void UpdateCoinUI()
     {
-        coinText.text = "Coins: " + coinCount;
+        coinText.text = "Coins: " + coinCount.ToString("");
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Coin"))
+        if (other.gameObject.CompareTag("coin"))
         {
             coinCount++;
             UpdateCoinUI();
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
     }
 }

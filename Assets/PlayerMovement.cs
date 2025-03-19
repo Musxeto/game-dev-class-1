@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     private bool hasLanded = false; 
     public bool isGrounded = true;
     public float jumpForce = 500f;
-
     void Start()
     {
         rb.useGravity = true;
