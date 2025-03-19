@@ -46,9 +46,13 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true; // Allow jumping again
         }
-        else if (collision.gameObject.CompareTag("Obstacle")) // Game Over
+        else if (collision.gameObject.CompareTag("obstacle")) // Game Over
         {
-            // GameOver();
+            GameOver();
         }
+    }
+
+    void GameOver(){
+        Time.timeScale = 0;
     }
 }

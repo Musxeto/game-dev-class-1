@@ -4,9 +4,9 @@
 
 -> game over 
 
--> jump over 
+-> jump over - done
 
 -> ADD COINS + sound + animation
 
--> SPARKLES SHOULD LOOK GOOD WHEN THE PLAYER DROPS
+-> SPARKLES SHOULD LOOK GOOD WHEN THE PLAYER DROPS - done
 
