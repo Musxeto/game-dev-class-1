@@ -1,6 +1,8 @@
--> LEARN ABOUT DRAG AND AUNGULAR DRAG AND THEIR DIFFERENCE
+-> LEARN ABOUT DRAG AND AUNGULAR DRAG AND THEIR DIFFERENCE - done
 
--> more obstacles and  - game over 
+-> more obstacles - done
+
+-> game over 
 
 -> jump over 
 

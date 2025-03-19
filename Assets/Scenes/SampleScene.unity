@@ -1043,6 +1043,8 @@ MonoBehaviour:
   forwardForce: 1000
   sidewayForce: 100
   groundImpactFX: {fileID: 1883668529}
+  isGrounded: 1
+  jumpForce: 8
 --- !u!114 &1408658113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1309,10 +1311,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f2e4977f8b4509ba50a0d4bf699e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 1825004159}
   player: {fileID: 1408658111}
-  spawnDistance: 50
-  spawnInterval: 10
+  obstacleParent: {fileID: 1825004161}
+  respawnDistance: 10
+  moveDistance: 100
+--- !u!4 &1825004161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8432335097798939157, guid: c8a8dbe7a6dbb8f6881dd31b822c0db1, type: 3}
+  m_PrefabInstance: {fileID: 1658889460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1883668528
 GameObject:
   m_ObjectHideFlags: 0
