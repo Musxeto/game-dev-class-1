@@ -42,13 +42,13 @@ public class CoinManager : MonoBehaviour
         coinText.text = "Coins: " + coinCount.ToString("");
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("coin"))
+        if (other.CompareTag("Coin")) 
         {
             coinCount++;
             UpdateCoinUI();
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }
