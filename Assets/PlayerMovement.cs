@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true; 
         }
-        else if (collision.gameObject.CompareTag("obstacle")) \
+        else if (collision.gameObject.CompareTag("obstacle")) 
         {
             GameOver();
         }
