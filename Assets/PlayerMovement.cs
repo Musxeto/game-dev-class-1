@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        if (Input.GetKeyDown("w") && isGrounded) // Jump
+        if (Input.GetKeyDown("space") && isGrounded) // Jump
         {
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z); 
             rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
@@ -43,9 +43,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true; // Allow jumping again
+            isGrounded = true; 
         }
-        else if (collision.gameObject.CompareTag("obstacle")) // Game Over
+        else if (collision.gameObject.CompareTag("obstacle")) \
         {
             GameOver();
         }
